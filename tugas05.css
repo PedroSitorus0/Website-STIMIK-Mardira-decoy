@@ -1,0 +1,264 @@
+:root{
+  --navy: #0f3b57;
+  --accent: #ff6a00;
+  --primary: #2d70b3;
+  --rounded: 20px;
+}
+
+*{box-sizing: border-box}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#21313a;
+  background:#ffffff;
+  line-height:1.5;
+}
+
+
+.top-band{
+  background: var(--navy);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  position: fixed;              
+  top: 0;
+  left: 0;
+  width: 100%;                  
+  z-index: 1000;                
+  background: var(--navy);      
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
+  backdrop-filter: blur(6px);
+}
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding: 24px;
+}
+
+/* navbar isi */
+.brand{
+  font-weight:700;
+  letter-spacing:2px;
+  color: #fff;
+  font-size:20px;
+}
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:18px;
+  align-items:center;
+  margin:0;
+  padding:0;
+
+}
+.nav-links a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  padding:8px 10px;
+  border-radius:8px;
+}
+.nav-links a:hover{ opacity:0.9 }
+
+.btn-primary{
+  background: var(--accent);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+.hero{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items:center;
+  gap: 50px;
+  padding: 40px 24px 10px 24px;
+}
+
+/* logo kiri */
+.hero-left{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hero-left img{
+margin-top: 1.5cm;
+  width:260px; 
+  height:auto;
+  display:block;
+  filter: drop-shadow(0 12px 20px rgba(0,0,0,0.15));
+}
+
+/* teks kanan */
+.hero-right h1{
+  margin:0 0 10px 0;
+  font-size:32px;
+  color:#fff;
+  line-height:1.05;
+}
+.hero-right .accent{
+  display:block;
+  color: var(--accent);
+  font-weight:800;
+  font-size:34px;
+}
+.hero-right .address{
+  margin:10px 0 0 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size:14px;
+}
+.hero-right .cta-sub{
+  margin:8px 0 18px 0;
+  color: rgba(255,255,255,0.8);
+  font-size:13px;
+}
+.btn-animasi{
+  background:#2f6fb3;
+  color:#fff;
+  padding:10px 22px;
+  border-radius:22px;
+  display:inline-block;
+  text-decoration:none;
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow:0 6px 14px rgba(0,0,0,0.18);
+}
+.btn-animasi:hover{
+  transform: translateY(-4px);
+  box-shadow:0 14px 30px rgba(0,0,0,0.2);
+}
+
+/* wave bottom - */
+.wave svg{ display: block; width:100%; height:70px;}
+
+
+
+main{ padding:40px 0 120px 0; background:#fff; }
+.program h2{
+  text-align:center;
+  color: #133;
+  font-size:26px;
+}
+.program p{text-align:center; color:#6b7a80; margin-top:8px;}
+.cards{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  margin-top:24px;
+  flex-wrap:wrap;
+}
+
+.card{
+  min-width:170px;
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(31,73,102,0.06);
+  background: linear-gradient(180deg,#fff,#f8fbff);
+  text-align:center;
+  color:#234;
+}
+
+
+.program {
+    text-align: center;
+  margin-top: 60px;
+}
+
+.program h2 {
+  font-size: 28px;
+  color: #123456;
+  margin-bottom: 8px;
+}
+
+.program p {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+/* Area kartu */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Tampilan kartu */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+  color: #1a2a3a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--navy);
+  color: #e8e8e8;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+
+@media (max-width:900px){
+    .hero{ grid-template-columns: 1fr; text-align:center; padding-top:30px }
+    .hero-left img{ width:200px }
+    .hero-right .accent{ display:inline; }
+    .nav-links{ display:none } 
+}
+
+@media (max-width:420px){
+    .brand{ font-size:18px }
+    .hero-left img{ width:160px }
+    .hero-right h1{ font-size:22px }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  .card {
+      width: 50%;
+    }
+}
